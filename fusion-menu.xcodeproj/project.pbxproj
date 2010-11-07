@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 		BC7DE58F128721D70027C712 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7DE58E128721D70027C712 /* Cocoa.framework */; };
+		BC7DE5DC128722650027C712 /* WOFMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DE5DB128722650027C712 /* WOFMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		BC7DE2A912871D220027C712 /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
 		BC7DE2AD12871D830027C712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC7DE58E128721D70027C712 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BC7DE5DA128722650027C712 /* WOFMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOFMenu.h; sourceTree = "<group>"; };
+		BC7DE5DB128722650027C712 /* WOFMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +41,7 @@
 		089C166AFE841209C02AAC07 /* fusion-menu */ = {
 			isa = PBXGroup;
 			children = (
+				BC7DE5CA1287223F0027C712 /* Classes */,
 				BC7DE29812871D020027C712 /* Configuration */,
 				BC7DE27312871C860027C712 /* Submodules */,
 				08FB77AFFE84173DC02AAC07 /* Source */,
@@ -97,6 +101,15 @@
 				BC7DE2A912871D220027C712 /* release-style.xcconfig */,
 			);
 			name = Configuration;
+			sourceTree = "<group>";
+		};
+		BC7DE5CA1287223F0027C712 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC7DE5DA128722650027C712 /* WOFMenu.h */,
+				BC7DE5DB128722650027C712 /* WOFMenu.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7DE5DC128722650027C712 /* WOFMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
