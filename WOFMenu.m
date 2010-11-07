@@ -28,7 +28,7 @@
 
 - (void)activate
 {
-    NSLog(@"Hello, world, from WOFMenu");
+
 }
 
 @end
