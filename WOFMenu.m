@@ -89,6 +89,15 @@
     [NSApp orderFrontStandardAboutPanel:sender];
 }
 
+- (IBAction)orderFrontPreferencesPanel:(id)sender
+{
+    [[NSAlert alertWithMessageText:@"No preferences"
+                     defaultButton:nil
+                   alternateButton:nil
+                       otherButton:nil
+         informativeTextWithFormat:@""] runModal];
+}
+
 #pragma mark Properties
 
 @synthesize mainMenu;

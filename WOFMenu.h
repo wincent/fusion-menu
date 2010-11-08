@@ -36,4 +36,6 @@
 
 - (IBAction)orderFrontStandardAboutPanel:(id)sender;
 
+- (IBAction)orderFrontPreferencesPanel:(id)sender;
+
 @end
