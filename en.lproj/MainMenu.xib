@@ -10,9 +10,7 @@
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">804</string>
 		</object>
-		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs">
-			<integer value="29"/>
-		</array>
+		<array class="NSMutableArray" key="IBDocument.EditedObjectIDs"/>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 		</array>
@@ -55,7 +53,7 @@
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="238522557">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">About New Application</string>
+									<string key="NSTitle">About «CFBundleName»</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="90941078"/>
@@ -116,7 +114,7 @@
 								</object>
 								<object class="NSMenuItem" id="755159360">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">Hide New Application</string>
+									<string key="NSTitle">Hide «CFBundleName»</string>
 									<string key="NSKeyEquiv">h</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -152,7 +150,7 @@
 								</object>
 								<object class="NSMenuItem" id="632727374">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">Quit New Application</string>
+									<string key="NSTitle">Quit «CFBundleName»</string>
 									<string key="NSKeyEquiv">q</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -1245,7 +1243,7 @@
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="238773614">
 									<reference key="NSMenu" ref="374024848"/>
-									<string key="NSTitle">New Application Help</string>
+									<string key="NSTitle">«CFBundleName» Help</string>
 									<string key="NSKeyEquiv">?</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
@@ -2911,7 +2909,7 @@
 				<string key="-3.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="103.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="103.ImportedFromIB2"/>
-				<string key="106.IBEditorWindowLastContentRect">{{743, 524}, {217, 23}}</string>
+				<string key="106.IBEditorWindowLastContentRect">{{777, 1042}, {224, 23}}</string>
 				<string key="106.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="106.ImportedFromIB2"/>
 				<string key="106.editorWindowContentRectSynchronizationRect">{{596, 852}, {216, 23}}</string>
@@ -2956,7 +2954,7 @@
 				<integer value="1" key="236.ImportedFromIB2"/>
 				<string key="239.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="239.ImportedFromIB2"/>
-				<string key="24.IBEditorWindowLastContentRect">{{672, 474}, {194, 73}}</string>
+				<string key="24.IBEditorWindowLastContentRect">{{706, 992}, {194, 73}}</string>
 				<string key="24.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="24.ImportedFromIB2"/>
 				<string key="24.editorWindowContentRectSynchronizationRect">{{525, 802}, {197, 73}}</string>
@@ -2966,13 +2964,13 @@
 				<string key="29.WindowOrigin">{74, 862}</string>
 				<string key="29.editorWindowContentRectSynchronizationRect">{{11, 977}, {478, 20}}</string>
 				<string key="295.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="296.IBEditorWindowLastContentRect">{{622, 504}, {231, 43}}</string>
+				<string key="296.IBEditorWindowLastContentRect">{{656, 1022}, {231, 43}}</string>
 				<string key="296.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="296.editorWindowContentRectSynchronizationRect">{{475, 832}, {234, 43}}</string>
 				<string key="297.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="298.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="373.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="374.IBEditorWindowLastContentRect">{{739, 778}, {83, 43}}</string>
+				<string key="374.IBEditorWindowLastContentRect">{{590, 1022}, {83, 43}}</string>
 				<string key="374.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="375.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="386.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3011,14 +3009,14 @@
 				<integer value="1" key="5.ImportedFromIB2"/>
 				<string key="56.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="56.ImportedFromIB2"/>
-				<string key="57.IBEditorWindowLastContentRect">{{517, 638}, {246, 183}}</string>
+				<string key="57.IBEditorWindowLastContentRect">{{368, 882}, {253, 183}}</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="57.ImportedFromIB2"/>
 				<string key="57.editorWindowContentRectSynchronizationRect">{{23, 794}, {245, 183}}</string>
 				<string key="58.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="58.ImportedFromIB2"/>
 				<string key="681.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="682.IBEditorWindowLastContentRect">{{695, 538}, {254, 283}}</string>
+				<string key="682.IBEditorWindowLastContentRect">{{546, 782}, {254, 283}}</string>
 				<string key="682.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="683.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="684.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3106,7 +3104,7 @@
 				<string key="794.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="80.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="80.ImportedFromIB2"/>
-				<string key="81.IBEditorWindowLastContentRect">{{653, 618}, {196, 203}}</string>
+				<string key="81.IBEditorWindowLastContentRect">{{504, 862}, {196, 203}}</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<integer value="1" key="81.ImportedFromIB2"/>
 				<string key="81.editorWindowContentRectSynchronizationRect">{{323, 672}, {199, 203}}</string>
@@ -3135,7 +3133,7 @@
 			<integer value="3200" key="NS.object.0"/>
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
-		<nil key="IBDocument.LastKnownRelativeProjectPath"/>
+		<string key="IBDocument.LastKnownRelativeProjectPath">../fusion-menu.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="NSMenuCheckmark">{9, 8}</string>
