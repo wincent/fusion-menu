@@ -110,7 +110,10 @@
 
 - (void)insertMenuItem:(NSMenuItem *)aMenuItem before:(NSString *)identifier
 {
-
+    NSMenuItem *item = [self menuItemForIdentifier:identifier];
+    NSMenu *menu = [item menu];
+    NSUInteger idx = [menu indexOfItem:item];
+    [menu insertItem:aMenuItem atIndex:idx];
 }
 
 - (void)insertMenuItem:(NSMenuItem *)aMenuItem after:(NSString *)identifier
