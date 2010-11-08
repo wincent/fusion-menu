@@ -135,7 +135,7 @@
 
 - (NSMenuItem *)menuItemForIdentifier:(NSString *)identifier
 {
-    return nil;
+    return [self.identifiers objectForKey:identifier];
 }
 
 - (void)registerIdentifier:(NSString *)identifier
