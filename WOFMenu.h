@@ -31,6 +31,7 @@
     IBOutlet NSMenu     *mainMenu;
 
     IBOutlet NSMenuItem *applicationMenuItem;
+    IBOutlet NSMenuItem *applicationAboutMenuItem;
     IBOutlet NSMenuItem *applicationPreferencesMenuItem;
 
     IBOutlet NSMenuItem *fileMenuItem;
@@ -55,6 +56,7 @@
 //! in the main menu:
 //!
 //!   - com.wincent.fusion.menu.application
+//!     - com.wincent.fusion.menu.application.about
 //!     - com.wincent.fusion.menu.application.preferences
 //!   - com.wincent.fusion.menu.file
 //!   - com.wincent.fusion.menu.edit

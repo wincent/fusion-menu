@@ -49,6 +49,7 @@
                         format:@"-[NSNib instantiateNibWithOwner:topLevelObjects: failed"];
         self.identifiers = [NSMutableDictionary dictionaryWithObjectsAndKeys:
             applicationMenuItem,            @"com.wincent.fusion.menu.application",
+            applicationAboutMenuItem,       @"com.wincent.fusion.menu.application.about",
             applicationPreferencesMenuItem, @"com.wincent.fusion.menu.application.preferences",
             fileMenuItem,                   @"com.wincent.fusion.menu.file",
             editMenuItem,                   @"com.wincent.fusion.menu.edit",
