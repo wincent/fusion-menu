@@ -41,23 +41,7 @@
         if (!nib)
             [NSException raise:NSInternalInconsistencyException
                         format:@"-[NSNib initWithNibNamed:bundle:] failed"];
-
-        NSArray *objects = nil;
-        if ([nib instantiateNibWithOwner:self topLevelObjects:&objects])
-        {
-            for (id object in objects)
-            {
-                if ([object isKindOfClass:[NSMenu class]])
-                {
-                    self.mainMenu = object;
-                    break;
-                }
-            }
-            if (!self.mainMenu)
-                [NSException raise:NSInternalInconsistencyException
-                            format:@"no NSMenu found among top-level objects"];
-        }
-        else
+        if (![nib instantiateNibWithOwner:self topLevelObjects:nil])
             [NSException raise:NSInternalInconsistencyException
                         format:@"-[NSNib instantiateNibWithOwner:topLevelObjects: failed"];
     }
@@ -98,7 +82,9 @@
     [NSApp setMainMenu:self.mainMenu];
 }
 
-- (void)orderFrontStandardAboutPanel:(id)sender
+#pragma mark IBActions
+
+- (IBAction)orderFrontStandardAboutPanel:(id)sender
 {
     [NSApp orderFrontStandardAboutPanel:sender];
 }

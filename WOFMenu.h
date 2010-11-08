@@ -28,6 +28,12 @@
 
 @interface WOFMenu : NSObject <WOFPlugInProtocol> {
 
+    IBOutlet NSMenu *mainMenu;
+
 }
+
+#pragma mark IBActions
+
+- (IBAction)orderFrontStandardAboutPanel:(id)sender;
 
 @end
