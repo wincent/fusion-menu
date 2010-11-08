@@ -98,6 +98,40 @@
          informativeTextWithFormat:@""] runModal];
 }
 
+#pragma mark Extension points
+
+- (void)insertMenuItem:(NSMenuItem *)aMenuItem before:(NSString *)identifier
+{
+
+}
+
+- (void)insertMenuItem:(NSMenuItem *)aMenuItem after:(NSString *)identifier
+{
+
+}
+
+- (void)removeMenuItemWithIdentifier:(NSString *)identifier
+{
+
+}
+
+- (void)replaceMenuItemAtIdentifier:(NSString *)identifier
+                       withMenuItem:(NSMenuItem *)aMenuItem
+{
+
+}
+
+- (NSMenuItem *)menuItemForIdentifier:(NSString *)identifier
+{
+    return nil;
+}
+
+- (void)registerIdentifier:(NSString *)identifier
+               forMenuItem:(NSMenuItem *)aMenuItem
+{
+
+}
+
 #pragma mark Properties
 
 @synthesize mainMenu;

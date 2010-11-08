@@ -38,4 +38,47 @@
 
 - (IBAction)orderFrontPreferencesPanel:(id)sender;
 
+#pragma mark Extension points
+
+//! @name Extension points
+//!
+//! Menu items may be added, removed, replaced, or otherwise manipulated using
+//! identifier strings in reverse-dotted format. The fusion-menu plug-in itself
+//! provides the following identifiers corresponding to the standard menu items
+//! in the main menu:
+//!
+//!   - com.fusion.menu.application
+//!     - com.fusion.menu.application.preferences
+//!   - com.fusion.menu.file
+//!   - com.fusion.menu.edit
+//!   - com.fusion.menu.format
+//!   - com.fusion.menu.view
+//!   - com.fusion.menu.window
+//!   - com.fusion.menu.help
+//!
+//! Other plug-ins may make additions, removals, replacements or other
+//! modifications, and may also register their own identifiers that can then be
+//! extended by other plug-ins.
+//!
+//! @startgroup
+
+- (void)insertMenuItem:(NSMenuItem *)aMenuItem before:(NSString *)identifier;
+
+- (void)insertMenuItem:(NSMenuItem *)aMenuItem after:(NSString *)identifier;
+
+- (void)removeMenuItemWithIdentifier:(NSString *)identifier;
+
+- (void)replaceMenuItemAtIdentifier:(NSString *)identifier
+                       withMenuItem:(NSMenuItem *)aMenuItem;
+
+//! Allows a plug-in to make modifications (such as setting a target, action or
+//! key equivalent) to an existing item.
+- (NSMenuItem *)menuItemForIdentifier:(NSString *)identifier;
+
+//! Allows a plug-in to advertise an extension point for use by other plug-ins.
+- (void)registerIdentifier:(NSString *)identifier
+               forMenuItem:(NSMenuItem *)aMenuItem;
+
+//! @endgroup
+
 @end
