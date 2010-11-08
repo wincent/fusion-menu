@@ -26,7 +26,7 @@
 
 @interface WOFMenu ()
 
-@property(readwrite, assign) NSMenu *mainMenu;
+@property(readwrite) NSMenu *mainMenu;
 
 @end
 
