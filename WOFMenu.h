@@ -43,8 +43,6 @@
 
 #pragma mark IBActions
 
-- (IBAction)orderFrontStandardAboutPanel:(id)sender;
-
 - (IBAction)orderFrontPreferencesPanel:(id)sender;
 
 #pragma mark Extension points

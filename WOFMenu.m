@@ -96,11 +96,6 @@
 
 #pragma mark IBActions
 
-- (IBAction)orderFrontStandardAboutPanel:(id)sender
-{
-    [NSApp orderFrontStandardAboutPanel:sender];
-}
-
 - (IBAction)orderFrontPreferencesPanel:(id)sender
 {
     [[NSAlert alertWithMessageText:@"No preferences"
