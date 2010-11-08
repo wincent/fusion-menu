@@ -24,11 +24,53 @@
 
 #import "WOFMenu.h"
 
+@interface WOFMenu ()
+
+@property(readwrite, assign) NSMenu *mainMenu;
+
+@end
+
 @implementation WOFMenu
+
+- (id)init
+{
+    if ((self = [super init]))
+    {
+        NSNib *nib = [[NSNib alloc] initWithNibNamed:@"MainMenu"
+                                              bundle:[NSBundle bundleForClass:[self class]]];
+        if (!nib)
+            [NSException raise:NSInternalInconsistencyException
+                        format:@"-[NSNib initWithNibNamed:bundle:] failed"];
+
+        NSArray *objects = nil;
+        if ([nib instantiateNibWithOwner:self topLevelObjects:&objects])
+        {
+            for (id object in objects)
+            {
+                if ([object isKindOfClass:[NSMenu class]])
+                {
+                    self.mainMenu = object;
+                    break;
+                }
+            }
+            if (!self.mainMenu)
+                [NSException raise:NSInternalInconsistencyException
+                            format:@"no NSMenu found among top-level objects"];
+        }
+        else
+            [NSException raise:NSInternalInconsistencyException
+                        format:@"-[NSNib instantiateNibWithOwner:topLevelObjects: failed"];
+    }
+    return self;
+}
 
 - (void)activate
 {
-
+    [NSApp setMainMenu:self.mainMenu];
 }
+
+#pragma mark Properties
+
+@synthesize mainMenu;
 
 @end
