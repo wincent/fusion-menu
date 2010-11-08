@@ -64,8 +64,37 @@
     return self;
 }
 
+- (void)find:(NSString *)findString replace:(NSString *)replacementString inMenu:(NSMenu *)aMenu
+{
+    for (NSMenuItem *item in [aMenu itemArray])
+    {
+        NSString *title = [item title];
+        if ([title rangeOfString:findString].location != NSNotFound)
+            [item setTitle:[title stringByReplacingOccurrencesOfString:findString
+                                                            withString:replacementString]];
+        NSMenu *submenu = [item submenu];
+        if (submenu)
+            [self find:findString replace:replacementString inMenu:submenu];
+    }
+}
+
+- (void)updateCFBundleName
+{
+    NSBundle *mainBundle = [NSBundle mainBundle];
+    NSString *localizedBundleName = [[mainBundle localizedInfoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+    if (!localizedBundleName)
+        localizedBundleName = [[mainBundle infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+    if (!localizedBundleName)
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"could not determine CFBundleName"];
+    [self find:@"«CFBundleName»"
+       replace:localizedBundleName
+        inMenu:self.mainMenu];
+}
+
 - (void)activate
 {
+    [self updateCFBundleName];
     [NSApp setMainMenu:self.mainMenu];
 }
 
