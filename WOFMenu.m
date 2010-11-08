@@ -118,7 +118,10 @@
 
 - (void)insertMenuItem:(NSMenuItem *)aMenuItem after:(NSString *)identifier
 {
-
+    NSMenuItem *item = [self menuItemForIdentifier:identifier];
+    NSMenu *menu = [item menu];
+    NSUInteger idx = [menu indexOfItem:item];
+    [menu insertItem:aMenuItem atIndex:idx + 1];
 }
 
 - (void)removeMenuItemWithIdentifier:(NSString *)identifier
