@@ -26,6 +26,9 @@
 
 @interface WOFMenu ()
 
+//! A look-up table for relating identifiers to menu items.
+@property(readwrite, assign) NSMutableDictionary *identifiers;
+
 @property(readwrite) NSMenu *mainMenu;
 
 @end
@@ -134,6 +137,7 @@
 
 #pragma mark Properties
 
+@synthesize identifiers;
 @synthesize mainMenu;
 
 @end
