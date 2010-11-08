@@ -134,7 +134,12 @@
 - (void)replaceMenuItemAtIdentifier:(NSString *)identifier
                        withMenuItem:(NSMenuItem *)aMenuItem
 {
-
+    NSMenuItem *item = [self menuItemForIdentifier:identifier];
+    NSMenu *menu = [item menu];
+    NSUInteger idx = [menu indexOfItem:item];
+    [menu removeItemAtIndex:idx];
+    [menu insertItem:aMenuItem atIndex:idx];
+    [self.identifiers setObject:aMenuItem forKey:identifier];
 }
 
 - (NSMenuItem *)menuItemForIdentifier:(NSString *)identifier
