@@ -126,7 +126,9 @@
 
 - (void)removeMenuItemWithIdentifier:(NSString *)identifier
 {
-
+    NSMenuItem *item = [self menuItemForIdentifier:identifier];
+    [[item menu] removeItem:item];
+    [self.identifiers removeObjectForKey:identifier];
 }
 
 - (void)replaceMenuItemAtIdentifier:(NSString *)identifier
