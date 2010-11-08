@@ -39,6 +39,8 @@
 {
     if ((self = [super init]))
     {
+        self.identifiers = [NSMutableDictionary dictionary];
+
         NSNib *nib = [[NSNib alloc] initWithNibNamed:@"MainMenu"
                                               bundle:[NSBundle bundleForClass:[self class]]];
         if (!nib)
