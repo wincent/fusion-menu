@@ -28,8 +28,17 @@
 
 @interface WOFMenu : NSObject <WOFPlugInProtocol> {
 
-    IBOutlet NSMenu *mainMenu;
+    IBOutlet NSMenu     *mainMenu;
 
+    IBOutlet NSMenuItem *applicationMenuItem;
+    IBOutlet NSMenuItem *applicationPreferencesMenuItem;
+
+    IBOutlet NSMenuItem *fileMenuItem;
+    IBOutlet NSMenuItem *editMenuItem;
+    IBOutlet NSMenuItem *formatMenuItem;
+    IBOutlet NSMenuItem *viewMenuItem;
+    IBOutlet NSMenuItem *windowMenuItem;
+    IBOutlet NSMenuItem *helpMenuItem;
 }
 
 #pragma mark IBActions
