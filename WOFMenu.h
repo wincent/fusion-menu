@@ -56,14 +56,14 @@
 //! provides the following identifiers corresponding to the standard menu items
 //! in the main menu:
 //!
-//!   - com.fusion.menu.application
-//!     - com.fusion.menu.application.preferences
-//!   - com.fusion.menu.file
-//!   - com.fusion.menu.edit
-//!   - com.fusion.menu.format
-//!   - com.fusion.menu.view
-//!   - com.fusion.menu.window
-//!   - com.fusion.menu.help
+//!   - com.wincent.fusion.menu.application
+//!     - com.wincent.fusion.menu.application.preferences
+//!   - com.wincent.fusion.menu.file
+//!   - com.wincent.fusion.menu.edit
+//!   - com.wincent.fusion.menu.format
+//!   - com.wincent.fusion.menu.view
+//!   - com.wincent.fusion.menu.window
+//!   - com.wincent.fusion.menu.help
 //!
 //! Other plug-ins may make additions, removals, replacements or other
 //! modifications, and may also register their own identifiers that can then be
