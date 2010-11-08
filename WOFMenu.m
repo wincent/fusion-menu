@@ -29,7 +29,7 @@
 //! A look-up table for relating identifiers to menu items.
 @property(readwrite, assign) NSMutableDictionary *identifiers;
 
-@property(readwrite) NSMenu *mainMenu;
+@property(readonly) NSMenu *mainMenu;
 
 @end
 
