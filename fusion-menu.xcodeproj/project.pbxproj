@@ -10,6 +10,7 @@
 		8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D5B49A704867FD3000E48DA /* InfoPlist.strings */; };
 		BC7DE58F128721D70027C712 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7DE58E128721D70027C712 /* Cocoa.framework */; };
 		BC7DE5DC128722650027C712 /* WOFMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7DE5DB128722650027C712 /* WOFMenu.m */; };
+		BCDE8AC612887CE500C7EF0E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCDE8AC512887CE500C7EF0E /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BC7DE5DA128722650027C712 /* WOFMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOFMenu.h; sourceTree = "<group>"; };
 		BC7DE5DB128722650027C712 /* WOFMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFMenu.m; sourceTree = "<group>"; };
 		BC7DE69312872BD00027C712 /* fusion-plugin-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "fusion-plugin-target.xcconfig"; path = "../fusion/fusion-plugin-target.xcconfig"; sourceTree = SOURCE_ROOT; };
+		BCDE8AC712887CF700C7EF0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				8D576317048677EA00EA77CD /* Info.plist */,
 				8D5B49A704867FD3000E48DA /* InfoPlist.strings */,
+				BCDE8AC512887CE500C7EF0E /* MainMenu.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5B49A804867FD3000E48DA /* InfoPlist.strings in Resources */,
+				BCDE8AC612887CE500C7EF0E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +193,14 @@
 				BC7DE2AD12871D830027C712 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BCDE8AC512887CE500C7EF0E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCDE8AC712887CF700C7EF0E /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
