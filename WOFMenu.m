@@ -137,7 +137,7 @@
 - (void)registerIdentifier:(NSString *)identifier
                forMenuItem:(NSMenuItem *)aMenuItem
 {
-
+    [self.identifiers setObject:aMenuItem forKey:identifier];
 }
 
 #pragma mark Properties
