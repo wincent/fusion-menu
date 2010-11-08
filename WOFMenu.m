@@ -39,8 +39,6 @@
 {
     if ((self = [super init]))
     {
-        self.identifiers = [NSMutableDictionary dictionary];
-
         NSNib *nib = [[NSNib alloc] initWithNibNamed:@"MainMenu"
                                               bundle:[NSBundle bundleForClass:[self class]]];
         if (!nib)
@@ -49,6 +47,15 @@
         if (![nib instantiateNibWithOwner:self topLevelObjects:nil])
             [NSException raise:NSInternalInconsistencyException
                         format:@"-[NSNib instantiateNibWithOwner:topLevelObjects: failed"];
+        self.identifiers = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+            applicationMenuItem,            @"com.wincent.fusion.menu.application",
+            applicationPreferencesMenuItem, @"com.wincent.fusion.menu.application.preferences",
+            fileMenuItem,                   @"com.wincent.fusion.menu.file",
+            editMenuItem,                   @"com.wincent.fusion.menu.edit",
+            formatMenuItem,                 @"com.wincent.fusion.menu.format",
+            viewMenuItem,                   @"com.wincent.fusion.menu.view",
+            windowMenuItem,                 @"com.wincent.fusion.menu.window",
+            helpMenuItem,                   @"com.wincent.fusion.menu.help", nil];
     }
     return self;
 }
