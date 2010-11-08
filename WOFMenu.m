@@ -69,6 +69,11 @@
     [NSApp setMainMenu:self.mainMenu];
 }
 
+- (void)orderFrontStandardAboutPanel:(id)sender
+{
+    [NSApp orderFrontStandardAboutPanel:sender];
+}
+
 #pragma mark Properties
 
 @synthesize mainMenu;
